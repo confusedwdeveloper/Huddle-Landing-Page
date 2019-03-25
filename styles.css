@@ -67,3 +67,14 @@ img {
   font-size: 1.1rem;
   margin-left: 3rem;
 }
+/* ............. mockup screen section, just below the landing section....... */
+.screen-mockup {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+#mockups {
+  flex-basis: 65vw;
+  padding: 0 auto;
+}
