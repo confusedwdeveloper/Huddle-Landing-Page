@@ -23,9 +23,15 @@ img {
 }
 #headline {
   height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .headline-img {
   max-width: 90%;
@@ -33,15 +39,24 @@ img {
 }
 /* Landing Section */
 .introduction {
-  min-height: 78vh;
+  /* min-height: 78vh; */
 }
 .introduction-container {
   text-align: center;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 8rem auto;
 }
 .main-heading {
@@ -69,12 +84,17 @@ img {
 }
 /* ............. mockup screen section, just below the landing section....... */
 .screen-mockup {
-  min-height: 100vh;
+  /* min-height: 85vh; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
 }
 #mockups {
-  flex-basis: 65vw;
+  -ms-flex-preferred-size: 65vw;
+      flex-basis: 65vw;
   padding: 0 auto;
 }
