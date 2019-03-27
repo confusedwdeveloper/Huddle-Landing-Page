@@ -1,0 +1,4 @@
+1.  At 820 px h1 starts to look ugly . I will have to adjust h1. Options. a) change flex-wrap property b) adjust word break
+2. At 550px, will need to increase spacing brtween button and logo in header
+3. Reduce size of big button
+4. better to reduce logo and first button width below 500px
