@@ -104,11 +104,14 @@ img {
   justify-content: space-around;
   align-items: center;
   min-height: 55vh;
-  width: 85vw;
+  width: 94vw;
 }
 /* need to reduce size of image */
 .statistics__img {
-  max-width: 30%;
+  max-width: 15%;
+}
+.statistics__img:first-child {
+  max-width: 20%;
 }
 /* now to work on the styles of things inside container */
 .statistics__claim {
@@ -128,4 +131,8 @@ img {
 }
 .statistics__faded--center {
   text-align: center;
+}
+.statistics__compartment:first-child {
+  margin-left: 0;
+}
 }
