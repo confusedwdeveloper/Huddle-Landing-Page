@@ -132,7 +132,3 @@ img {
 .statistics__faded--center {
   text-align: center;
 }
-.statistics__compartment:first-child {
-  margin-left: 0;
-}
-}
