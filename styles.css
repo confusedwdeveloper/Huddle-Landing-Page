@@ -121,7 +121,7 @@ img {
   font-weight: 700;
   line-height: 0;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 .statistics__faded {
   color: var(--body-color);
@@ -130,5 +130,5 @@ img {
 
 }
 .statistics__faded--center {
-  text-align: center;
+  margin-left: 2.5rem;
 }
