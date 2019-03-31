@@ -132,3 +132,45 @@ img {
 .statistics__faded--center {
   margin-left: 2.5rem;
 }
+/* Grow together section */
+.grow-together {
+  background: url('./huddle-landing-page-251784-master/images/bg-section-top-desktop-1.svg') top,
+              url('./huddle-landing-page-251784-master/images/bg-section-bottom-desktop-1.svg') 50% bottom;
+  padding: 12rem 0 12rem 0;
+  background-size: cover cover;
+  background-repeat: no-repeat, no-repeat;
+
+
+}
+.grow-together__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10vw;
+  margin: -4rem auto;
+  background: hsl(207, 100%, 98%);
+  padding-left: 7rem;
+  padding-right: 7rem;
+
+
+}
+.grow-together__text {
+  grid-area: 1/1/1/2;
+  align-self: center;
+
+}
+.grow-together__image {
+  grid-area: 1/2/1/3;
+}
+.grow-together__heading {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 0;
+  padding: 1rem;
+}
+.grow-together__paragraph {
+  font-size: 0.85rem;
+  color: var(--body-color);
+  opacity: 0.9;
+}
