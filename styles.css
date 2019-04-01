@@ -177,7 +177,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10vw;
-  margin: -0 auto;
+  margin: 0 auto;
   padding-left: 7rem;
   padding-right: 7rem;
 }
