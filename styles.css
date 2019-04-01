@@ -139,8 +139,6 @@ img {
   padding: 12rem 0 12rem 0;
   background-size: cover cover;
   background-repeat: no-repeat, no-repeat;
-
-
 }
 .grow-together__container {
   display: grid;
@@ -150,13 +148,10 @@ img {
   background: hsl(207, 100%, 98%);
   padding-left: 7rem;
   padding-right: 7rem;
-
-
 }
 .grow-together__text {
   grid-area: 1/1/1/2;
   align-self: center;
-
 }
 .grow-together__image {
   grid-area: 1/2/1/3;
