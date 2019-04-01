@@ -169,3 +169,22 @@ img {
   color: var(--body-color);
   opacity: 0.9;
 }
+/* Flowing Conversations section */
+.flowing-conversations {
+  padding: 10rem 0;
+}
+.flowing-conversations__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10vw;
+  margin: -0 auto;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.flowing-conversations__image {
+  grid-area: 1/1/1/2;
+}
+.flowing-conversations__text {
+  grid-area: 1/2/1/3;
+  align-self: center;
+}
