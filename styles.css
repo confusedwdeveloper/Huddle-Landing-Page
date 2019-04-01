@@ -160,7 +160,7 @@ img {
   color: var(--heading-color);
   font-family: var(--heading-font);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 0;
   padding: 1rem 0;
 }
@@ -187,4 +187,28 @@ img {
 .flowing-conversations__text {
   grid-area: 1/2/1/3;
   align-self: center;
+}
+/* Your users section */
+.your-users {
+  background: url('./huddle-landing-page-251784-master/images/bg-section-top-desktop-2.svg') top,
+              url('./huddle-landing-page-251784-master/images/bg-section-bottom-desktop-2.svg') 50% bottom;
+  padding: 10rem 0 10rem 0;
+  background-size: cover cover;
+  background-repeat: no-repeat, no-repeat;
+}
+.your-users__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10vw;
+  margin: -2rem auto;
+  background: hsl(207, 100%, 98%);
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.your-users__text {
+  grid-area: 1/1/1/2;
+  align-self: center;
+}
+.your-users__image {
+  grid-area: 1/2/1/3;
 }
