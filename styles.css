@@ -229,7 +229,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 8rem auto;
+  margin: 6rem auto;
 }
 .main-button--build-community {
   margin-top: 1rem;
