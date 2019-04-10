@@ -94,8 +94,8 @@ img {
   margin: 0;
 }
 #mockups {
-  -ms-flex-preferred-size: 65vw;
-      flex-basis: 65vw;
+  min-width: 0;
+  flex-basis: 65vw;
   padding: 0 auto;
 }
 /* Statistics section */
@@ -161,13 +161,15 @@ img {
   font-family: var(--heading-font);
   font-weight: 700;
   font-size: 2rem;
-  line-height: 0;
-  padding: 1rem 0;
+  line-height: normal;
+  padding: 0;
+  margin-bottom: 1.15rem;
 }
 .grow-together__paragraph {
   font-size: 0.85rem;
   color: var(--body-color);
   opacity: 0.9;
+  padding: 0 auto;
 }
 /* Flowing Conversations section */
 .flowing-conversations {
@@ -238,14 +240,14 @@ img {
 .footer {
   background: url('./huddle-landing-page-251784-master/images/bg-footer-top-desktop.svg');
   background-position: top;
-  background-size: contain;
+  background-size: 100% 25%;
   background-repeat: no-repeat;
   padding: 10rem 0;
   padding-bottom: 0;
 }
 .footer__container {
   background: var(--body-color);
-  margin: -2rem auto;
+  /* margin: -2rem auto; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20vw;
@@ -326,3 +328,5 @@ img {
   border: none;
   font-weight: 600;
 }
+/* Media Queries  */
+/* Everything looking good for 1000px and above */
