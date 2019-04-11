@@ -58,14 +58,17 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 8rem auto;
+  flex-wrap: wrap;
 }
 .main-heading {
   font-family: var(--heading-font, sans-serif);
   text-transform: capitalize;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 0;
   color: var(--heading-color);
+  line-height: normal;
+  padding: 0;
+  margin-bottom: 0.1rem;
 }
 .introduction-container p {
   font-size: 1.2rem;
@@ -81,6 +84,8 @@ img {
   margin-top: 1.5rem;
   font-size: 1.1rem;
   margin-left: 3rem;
+  min-width: 0;
+  flex-basis: auto;
 }
 /* ............. mockup screen section, just below the landing section....... */
 .screen-mockup {
@@ -177,7 +182,7 @@ img {
 }
 .flowing-conversations__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-column-gap: 8vw;
   margin: 0 auto;
   padding-left: 10rem;
@@ -291,6 +296,7 @@ img {
   display: flex;
   justify-content: space-between;
   min-width: 45%;
+  width: 80%;
   font-size: 2rem;
 }
 /* NewsLetter Section */
@@ -327,6 +333,59 @@ img {
   background-color: var(--pink);
   border: none;
   font-weight: 600;
+  min-width: 0;
+}
+/* I need to allow form items to wrap */
+.newsletter__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /* Media Queries  */
-/* Everything looking good for 1000px and above */
+/* Everything looking good for 882px and above */
+@media (max-width: 882px) {
+.footer__container {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "first"
+  "second";
+  grid-row-gap: 10vh;
+
+}
+.footer__address {
+  grid-area: second;
+  width: 50%;
+  margin: auto;
+}
+.footer__newsletter {
+  grid-area: first;
+  width: 50%;
+  margin: auto;
+}
+.footer__container {
+  justify-items: normal;
+}
+.footer__button {
+  margin-top: 1rem;
+  margin-left: 0;
+}
+.footer {
+  background-size: 100% 17%;
+}
+.main-heading {
+  min-width: 0;
+  flex-basis: 60%;
+  width: 80%;
+}
+}
+@media (max-width: 683px) {
+  .footer {
+    background-size: 100% 17%;
+  }
+}
+@media (max-width: 655px) {
+  .footer__address, .footer__newsletter {
+    width: 60%;
+  }
+}
+/* At 600px I can redefine grid structures for grow together , flowing conv sections */
