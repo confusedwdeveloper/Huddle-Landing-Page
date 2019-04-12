@@ -389,3 +389,22 @@ img {
   }
 }
 /* At 600px I can redefine grid structures for grow together , flowing conv sections */
+@media (max-width: 600px) {
+  .grow-together__container, .flowing-conversations__container, .your-users__container {
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "first"
+    "second";
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .grow-together__image, .flowing-conversations__image, .your-users__image {
+    grid-area: first;
+  }
+  .grow-together__text, .flowing-conversations__text, .your-users__text {
+    grid-area: second;
+    text-align: center;
+  }
+/* This should take care of this grid sections. Everything's good now for 570px and above */
+}
